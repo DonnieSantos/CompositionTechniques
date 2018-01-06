@@ -29,8 +29,8 @@ The primary quality of Dependency Inversion is that **concrete dependencies are 
 
 Any [Creation Pattern](https://en.wikipedia.org/wiki/Creational_pattern) can be used to be the thing which makes the decisions as to which concrete object will be obtained for the interface types at runtime. Some of these include but are not limited to:
 
-- **Constructors**: Derived classes inherit code.
-- **Factories**: Run-time behavior determination.
-- **Dependency Injection**: Derived classes can override code.
+- **Constructors**: Constructor requires concrete types adhering to interfaces.
+- **Factories**: Some other object decides which concrete types you will receive.
+- **Dependency Injection**: Some other library provides concretions by configuration.
 
 There are plenty of other [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns) well documented in famous books and articles that you can improvise with as long as you do not break **SOLID Principles**. None of the implementation details in my code are important; actually, I went out of my way to write them in the least sophisticated way possible to make them accessible to beginners. The only thing I am trying to showcase in my code is the simple nature of Object Composition, why it is not harder than Inheritance, and why it is always better than Inheritance in the long run.
