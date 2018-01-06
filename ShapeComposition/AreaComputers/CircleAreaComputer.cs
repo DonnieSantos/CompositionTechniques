@@ -1,6 +1,6 @@
 ﻿using System;
 using ShapeComposition.Models;
-using ShapeAspect = ShapeComposition.Models.ShapeModel.ShapeAspect;
+using Property = ShapeComposition.Models.ShapeModel.ShapeProperty;
 
 namespace ShapeComposition.AreaComputers
 {
@@ -8,7 +8,7 @@ namespace ShapeComposition.AreaComputers
     {
         public double ComputeArea(ShapeModel model)
         {
-            return Math.PI * Math.Pow(model.ShapeData[ShapeAspect.Radius], 2);
+            return Math.PI * Math.Pow(model.Values[Property.Radius], 2);
         }
     }
 }

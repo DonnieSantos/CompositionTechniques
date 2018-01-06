@@ -4,13 +4,15 @@ namespace ShapeComposition.Models
 {
     public class ShapeModel
     {
-        public enum ShapeAspect { Width, Height, Radius }
+        // A Shape Model can provide various property values.
 
-        public Dictionary<ShapeAspect, double> ShapeData;
+        public enum ShapeProperty { Width, Height, Radius }
+
+        public Dictionary<ShapeProperty, double> Values;
 
         public ShapeModel()
         {
-            ShapeData = new Dictionary<ShapeAspect, double>();
+            Values = new Dictionary<ShapeProperty, double>();
         }
     }
 }

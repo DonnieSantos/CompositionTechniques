@@ -1,0 +1,14 @@
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\ChessCompositionTests.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\ChessCompositionTests.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\ChessComposition.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\ChessComposition.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\obj\Debug\ChessCompositionTests.csprojResolveAssemblyReference.cache
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\obj\Debug\ChessCompositionTests.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessCompositionTests\obj\Debug\ChessCompositionTests.pdb

@@ -7,3 +7,7 @@ C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ChessComposition\bin\
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ChessComposition\bin\Debug\ChessComposition.pdb
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ChessComposition\obj\Debug\ChessComposition.dll
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ChessComposition\obj\Debug\ChessComposition.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ChessComposition\bin\Debug\ChessComposition.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessComposition\bin\Debug\ChessComposition.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ChessComposition\obj\Debug\ChessComposition.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ChessComposition\obj\Debug\ChessComposition.pdb

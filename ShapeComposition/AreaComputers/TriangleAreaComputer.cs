@@ -1,5 +1,5 @@
 ﻿using ShapeComposition.Models;
-using ShapeAspect = ShapeComposition.Models.ShapeModel.ShapeAspect;
+using Property = ShapeComposition.Models.ShapeModel.ShapeProperty;
 
 namespace ShapeComposition.AreaComputers
 {
@@ -7,7 +7,7 @@ namespace ShapeComposition.AreaComputers
     {
         public double ComputeArea(ShapeModel model)
         {
-            return model.ShapeData[ShapeAspect.Height] * model.ShapeData[ShapeAspect.Width] * 0.5;
+            return model.Values[Property.Height] * model.Values[Property.Width] * 0.5;
         }
     }
 }

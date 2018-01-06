@@ -7,3 +7,7 @@ C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ShapeComposition\bin\
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ShapeComposition\bin\Debug\ShapeComposition.pdb
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ShapeComposition\obj\Debug\ShapeComposition.dll
 C:\Users\Donal\Desktop\CodeExamples\Composition Techniques\ShapeComposition\obj\Debug\ShapeComposition.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ShapeComposition\bin\Debug\ShapeComposition.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ShapeComposition\bin\Debug\ShapeComposition.pdb
+C:\Users\Donal\Desktop\CompositionTechniques\ShapeComposition\obj\Debug\ShapeComposition.dll
+C:\Users\Donal\Desktop\CompositionTechniques\ShapeComposition\obj\Debug\ShapeComposition.pdb
