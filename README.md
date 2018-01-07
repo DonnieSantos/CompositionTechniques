@@ -54,6 +54,7 @@ System.Console.WriteLine(human.HasFins());
 
 You would use Composition like this:
 
+```cs
 public interface CanHaveFins
 {
 	bool HasFins();
