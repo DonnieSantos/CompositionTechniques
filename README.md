@@ -105,3 +105,10 @@ Any [Creation Pattern](https://en.wikipedia.org/wiki/Creational_pattern) can be 
 - **Dependency Injection**: Some other library provides concretions by configuration.
 
 There are plenty of other [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns) well documented in famous books and articles that you can improvise with as long as you do not break **SOLID Principles**. None of the implementation details in my code are important; actually, I went out of my way to write them in the least sophisticated way possible to make them accessible to beginners. The only thing I am trying to showcase in my code is the simple nature of Object Composition, why it is not harder than Inheritance, and why it is always better than Inheritance in the long run.
+
+# Code Examples
+
+So far, I have 2 small examples here to illustrate Dependency Inversion:
+
+- **Chess**: [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessCompositionTests).
+- **Shapes**: [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeCompositionTests).
