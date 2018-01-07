@@ -21,6 +21,76 @@ The alternative is Object Composition, which literally has all the advantages of
 
 Implementing Composition is fairly trivial. You merely change your design from the ***“is a”*** model of Inheritance to a ***“has a”*** model with Interfaces. Instead of an object obtaining its behaviors through Inheritance because of what it ***is***, the object instead should not really be or do much other than be a composite of other smaller objects, abstractly typed, which provide behaviors. Simply put, instead of inheriting from a base class that provides methods for A, B and C… The class should ***have*** three objects, typed as interfaces, that will be instantiated during runtime by some *other thing* that fulfills the promised behaviors for interfaces A, B and C. That’s it. Really.
 
+So basically, instead of using Inheritance like this:
+
+```cs
+abstract class Mammal
+{
+	public abstract bool HasFins();
+}
+
+class Dolphin: Mammal
+{
+	public override bool HasFins()
+	{
+		return true;
+	}
+}
+
+class Human: Mammal
+{
+	public override bool HasFins()
+	{
+		return false;
+	}
+}
+
+Mammal dolphin = new Dolphin();
+Mammal human = new Human();
+
+System.Console.WriteLine(dolphin.HasFins());
+System.Console.WriteLine(human.HasFins());
+```
+
+You would use Composition like this:
+
+public interface CanHaveFins
+{
+	bool HasFins();
+}
+
+class DoesHaveFins: CanHaveFins
+{
+	public bool HasFins() { return true; }
+}
+
+class DoesNotHaveFins: CanHaveFins
+{
+	public bool HasFins() { return false; }
+}
+
+class Mammal
+{
+	private CanHaveFins _canHaveFins;
+
+	public Mammal(CanHaveFins canHaveFins)
+	{
+		_canHaveFins = canHaveFins;
+	}
+
+	public bool HasFins()
+	{
+		return _canHaveFins.HasFins();
+	}
+}
+
+Mammal dolphin = new Mammal(new DoesHaveFins());
+Mammal human = new Mammal(new DoesNotHaveFins());
+
+System.Console.WriteLine(dolphin.HasFins());
+System.Console.WriteLine(human.HasFins());
+```
+
 # Implementation Details
 
 The primary quality of Dependency Inversion is that **concrete type dependencies are not created, referenced, or even known within a class** but instead are provided from something else. It’s of the utmost importance that the class never, ever knows which concrete types it will be referring to inside of its actual class definition. **That is what it means to invert dependencies.** Some other thing will be responsible for determining the concrete types, not the object itself. If the class instantiates, inherits from, or even references a concrete type, it then becomes coupled to that type, and will become susceptible to breaking changes from outside of itself. This might not seem like a big deal at first, but any project that grows to hundreds of classes, and tens of thousands of lines of code, with more than a few programmers working on it simultaneously, and which needs to be constantly maintained for more than a few months, will become excruciatingly hard to modify without heavy refactoring and costly regression testing.
