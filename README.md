@@ -52,7 +52,7 @@ System.Console.WriteLine(dolphin.HasFins());
 System.Console.WriteLine(human.HasFins());
 ```
 
-You would use Composition like this:
+You would use Composition similar to this:
 
 ```cs
 public interface CanHaveFins
