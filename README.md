@@ -4,7 +4,7 @@ Writing code that works is easy; writing code that is high quality is not. In ov
 
 # Dependency Inversion
 
-In this small repository, I am focusing on illustrating introductory techniques for [Dependency Inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle), one of the most important SOLID principles. Since one of the most common causes of inter-object dependencies wreaking havoc on maintainability is the lack of understanding of [Class Responsibilities](https://en.wikipedia.org/wiki/Single_responsibility_principle), and in particular the overuse (or use at all) of [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)), I will focus on the well-known example of [Composition Over Inheritance].(https://en.wikipedia.org/wiki/Composition_over_inheritance). The simple code examples here hopefully dispel the common argument that Inheritance is “easier to read”, which is the only argument I’ve ever heard for why it should ever be used. In my estimation, there is no reason to ***ever*** use Inheritance, as Composition has all its strengths without any of its weaknesses, primarily the awful problem of [Class Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)).
+In this small repository, I am focusing on illustrating introductory techniques for [Dependency Inversion](https://en.wikipedia.org/wiki/Dependency_inversion_principle), one of the most important SOLID principles. Since one of the most common causes of inter-object dependencies wreaking havoc on maintainability is the lack of understanding of [Class Responsibilities](https://en.wikipedia.org/wiki/Single_responsibility_principle), and in particular the overuse (or use at all) of [Inheritance](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)), I will focus on the well-known example of [Composition Over Inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance). The simple code examples here hopefully dispel the common argument that Inheritance is “easier to read”, which is the only argument I’ve ever heard for why it should ever be used. In my estimation, there is no reason to ***ever*** use Inheritance, as Composition has all its strengths without any of its weaknesses, primarily the awful problem of [Class Coupling](https://en.wikipedia.org/wiki/Coupling_(computer_programming)).
 
 # Composition Over Inheritance
 
@@ -17,7 +17,7 @@ The big selling points of Inheritance are:
 The biggest problem of Inheritance is class coupling. In large projects, it can make rework a nightmare, making it extremely difficult to apply a small change without cascading breaking changes across modules and tests.
 The alternative is Object Composition, which literally has all the advantages of Inheritance with no need for class coupling. I have asked perhaps over one hundred extremely accomplished developers to provide me with a reason to use Inheritance, and the only argument I have been given is “It’s easier”. I hope these meager code examples show that object composition is very easy even for a beginner.
 
-# How To Do It
+# Core Design Concept
 
 Implementing Composition is fairly trivial. You merely change your design from the ***“is a”*** model of Inheritance to a ***“has a”*** model with Interfaces. Instead of an object obtaining its behaviors through Inheritance because of what it ***is***, the object instead should not really be or do much other than be a composite of other smaller objects, abstractly typed, which provide behaviors. Simply put, instead of inheriting from a base class that provides methods for A, B and C… The class should ***have*** three objects, typed as interfaces, that will be instantiated during runtime by some *other thing* that fulfills the promised behaviors for interfaces A, B and C. That’s it. Really.
 
@@ -25,7 +25,7 @@ Implementing Composition is fairly trivial. You merely change your design from t
 
 The primary quality of Dependency Inversion is that **concrete dependencies are not created, contained, or even known within a class** (as is the case with instantiating concrete types inside of a class by using the “new” keyword, or by inheriting from another class; both of these result in hard coupling) but instead are given from somewhere else, resulting in the class not actually knowing which concrete objects it will be given. It’s of the utmost importance that the class never, ever knows which concrete types it will be referring to inside of its actual class definition. **That is what it means to invert dependencies.** Some other thing will be responsible for determining the concrete types, not the object itself.
 
-# Creation Patterns
+# Choosing a Creation Pattern
 
 Any [Creation Pattern](https://en.wikipedia.org/wiki/Creational_pattern) can be used to be the thing which makes the decisions as to which concrete object will be obtained for the interface types at runtime. Some of these include but are not limited to:
 
