@@ -2,7 +2,7 @@
 
 namespace ChessComposition.Rules
 {
-    public class CanMoveDiagonal : IRuleLegal
+    public class CanMoveDiagonal : IRule
     {
         public bool IsLegalMove(int x, int y, int dx, int dy)
         {

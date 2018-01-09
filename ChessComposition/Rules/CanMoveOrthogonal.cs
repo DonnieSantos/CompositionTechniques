@@ -1,6 +1,6 @@
 ﻿namespace ChessComposition.Rules
 {
-    public class CanMoveOrthogonal : IRuleLegal
+    public class CanMoveOrthogonal : IRule
     {
         public bool IsLegalMove(int x, int y, int dx, int dy)
         {

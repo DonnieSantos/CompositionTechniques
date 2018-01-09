@@ -35,17 +35,17 @@ namespace CompositionTechniques
             // It would be better to use a Fluent Interface, but I chose not to
             // so the code would be more accessible for beginners.
 
-            _rook = new Piece(0, 0, new List<IRuleLegal>(), new List<IRuleIllegal>());
+            _rook = new Piece(0, 0, new List<IRule>(), new List<IRule>());
             _rook.LegalRules.Add(new CanMoveOrthogonal());
             _rook.IllegalRules.Add(new CannotMoveOffBoard());
             _rook.IllegalRules.Add(new CannotMoveOntoSameSpace());
 
-            _bishop = new Piece(0, 0, new List<IRuleLegal>(), new List<IRuleIllegal>());
+            _bishop = new Piece(0, 0, new List<IRule>(), new List<IRule>());
             _bishop.LegalRules.Add(new CanMoveDiagonal());
             _bishop.IllegalRules.Add(new CannotMoveOffBoard());
             _bishop.IllegalRules.Add(new CannotMoveOntoSameSpace());
 
-            _queen = new Piece(0, 0, new List<IRuleLegal>(), new List<IRuleIllegal>());
+            _queen = new Piece(0, 0, new List<IRule>(), new List<IRule>());
             _queen.LegalRules.Add(new CanMoveOrthogonal());
             _queen.LegalRules.Add(new CanMoveDiagonal());
             _queen.IllegalRules.Add(new CannotMoveOffBoard());
