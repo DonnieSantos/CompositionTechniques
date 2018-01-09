@@ -44,7 +44,7 @@
     <Compile Include="Rules\CanMoveDiagonal.cs" />
     <Compile Include="Rules\CannotMoveOffBoard.cs" />
     <Compile Include="Rules\CannotMoveOntoSameSpace.cs" />
-    <Compile Include="Rules\IRuleLegal.cs" />
+    <Compile Include="Rules\IRule.cs" />
     <Compile Include="Piece.cs" />
   </ItemGroup>
   <ItemGroup>
