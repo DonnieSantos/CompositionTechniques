@@ -31,8 +31,9 @@ There are plenty of other [Design Patterns](https://en.wikipedia.org/wiki/Design
 
 ## Code Examples
 
-- **Chess**: [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessCompositionTests).
-- **Shapes**: [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeCompositionTests).
+- **Chess (C#)** : [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ChessCompositionTests).
+- **Shapes (C#)** : [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeComposition) and [Unit Tests](https://github.com/DonnieSantos/CompositionTechniques/tree/master/ShapeCompositionTests).
+- **Pets (Java)** : [Source Code](https://github.com/DonnieSantos/CompositionTechniques/tree/master/!!%20Java%20Pets)
 
 ## Super Short Example
 
