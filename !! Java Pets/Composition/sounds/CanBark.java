@@ -1,5 +1,6 @@
 package sounds;
 
-public interface CanBark {
+public interface CanBark
+{
     void bark();
 }

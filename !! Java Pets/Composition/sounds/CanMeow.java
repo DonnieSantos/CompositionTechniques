@@ -1,5 +1,6 @@
 package sounds;
 
-public interface CanMeow {
+public interface CanMeow
+{
     void meow();
 }

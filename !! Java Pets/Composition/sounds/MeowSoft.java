@@ -1,8 +1,10 @@
 package sounds;
 
-public class MeowSnowshoe implements CanMeow {
+public class MeowSoft implements CanMeow
+{
     @Override
-    public void meow() {
+    public void meow()
+    {
         System.out.println("Purrrr.");
     }
 }

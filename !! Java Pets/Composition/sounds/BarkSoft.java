@@ -1,8 +1,10 @@
 package sounds;
 
-public class BarkPomeranian implements CanBark {
+public class BarkSoft implements CanBark
+{
     @Override
-    public void bark() {
+    public void bark()
+    {
         System.out.println("ruff!");
     }
 }

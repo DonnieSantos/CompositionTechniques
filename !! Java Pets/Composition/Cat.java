@@ -1,22 +1,32 @@
-import attributes.HasPetAttributes;
+import attributes.PetInfo;
 import sounds.CanMeow;
 
-public class Cat implements HasPetAttributes {
-
+public class Cat implements PetInfo, CanMeow
+{
     protected CanMeow canMeow;
-    protected HasPetAttributes attributes;
+    protected PetInfo attributes;
 
-    public Cat(CanMeow canMeow, HasPetAttributes attributes) {
+    public Cat(CanMeow canMeow, PetInfo attributes)
+    {
         this.canMeow = canMeow;
         this.attributes = attributes;
     }
 
-    void meow() {
+    @Override
+    public void meow()
+    {
         this.canMeow.meow();
     }
 
     @Override
-    public void introduce() {
-        attributes.introduce();
+    public int getAge()
+    {
+        return this.attributes.getAge();
+    }
+
+    @Override
+    public String getName()
+    {
+        return this.attributes.getName();
     }
 }
